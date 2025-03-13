@@ -65,6 +65,7 @@ function operate(op1, opn, op2){
             res = op1 % op2
             break
     }
+    res = Math.round(res*100)/100;
     setDisplay(res)
     expression.splice(0, 3, res)
 }
